@@ -24,7 +24,6 @@ namespace re_platform_fapps_transaction_purchaseorder
         public static string blobcontainer { get; set; }
         public static string blobname { get; set; }
 
-
         [FunctionName("purchaseorder")]
         public static async Task<HttpResponseMessage> Run(
             [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequest req,
